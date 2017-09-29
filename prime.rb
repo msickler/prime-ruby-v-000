@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(integer)
-array = (1..10).to_a
+array = (1..integer-1).to_a
 array.any? do |i|
   if integer < 2
     false
