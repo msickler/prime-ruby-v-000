@@ -4,7 +4,7 @@ array = (1..integer-1).to_a
 array.any? do |i|
   if integer < 2
     false
-  elsif array.none? do |i|
+  elsif array.any? do |i|
     integer % number == 0
   end
     false
