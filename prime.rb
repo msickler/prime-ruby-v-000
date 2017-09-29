@@ -5,7 +5,7 @@ array.any? do |i|
   if integer < 2
     false
   elsif array.any? do |i|
-    integer % number == 0
+    integer % i == 0
   end
     false
   else
