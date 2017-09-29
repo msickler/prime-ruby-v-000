@@ -2,9 +2,9 @@
 def prime?(integer)
 array = (1..10).to_a
 array.any? do |i|
-  if i < 1
+  if i < 2
     false
-  elsif i % 2 == true
+  elsif integer % i == true
     false
   else
     true
