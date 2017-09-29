@@ -1,13 +1,11 @@
 # Add  code here!
 def prime?(integer)
-array = (1..integer-1).to_a
-array.any? do |i|
-  if integer < 2 && integer % i == 0
-    false
-
-  else
-    true
-  end
-end
-
+  array = (2..i-1).to_a
+     if array.any? {|number| i % number == 0 }
+       return false
+     elsif i <= 1
+       return false
+     else
+       return true
+     end
 end
